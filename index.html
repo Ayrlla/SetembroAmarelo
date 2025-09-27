@@ -10,25 +10,27 @@
 
     </head>
     <body>
-
         <header>
-            <img src="" alt="">
+            <div class="headerIcon-texto">
+            <img src="images/laço-amarelo.png" alt="iconeSetembro">
             <h1>Setembro Amarelo</h1>
+            </div>
             <nav>
                 <a href="#inicio">Início</a>
-                <a href="#liguecvv">Ligue CVV</a>
+                <a href="#ajuda">Ajuda CVV</a>
                 <a href="#sobre">Sobre</a>
                 <a href="#frases">Frases</a>
-                <a href="#duvidas">Dúvidas</a>
+                <a href="#listas">Listas</a>
                 <a href="#querconversar">Quer conversar?</a>
             </nav>
-            <section id="#inicio">
-                <img src="" alt="">
+        </header>
+            <section id="inicio">
+                <img src="images/SetembroAmarelo.png" alt="imagemDaCampanha">
             </section>
-            <section id="#sobre">
+            <section id="sobre">
                 <div class="titulos">
                     <h2>Oque é o Setembro Amarelo</h2>
-                    <p>Contexto</p>
+                    <p>O Setembro Amarelo é uma campanha brasileira de prevenção ao suicídio, iniciada em 2015 pelo Centro de Valorização da Vida(CVV),Conselho Federal de Medicina(CFM) e Associação Brasileira de Psiquiatria(ABP). A iniciativa busca quebrar tabus e promover o diálogo aberto sobre saúde mental, oferecendo informação qualificada e apoio emocional para pessoas em situação de vulnerabilidade/p>
                 </div>
                 <div class="texto">
                     <p>O Setembro Amarelo é uma campanha brasileira de prevenção ao suicidio, iniciada em 2015 pelo Centro de Valorização da Vida (CVV), Conselho Federal de Medicina (CFM) e Associação Brasileira de Psiquiatria (ABP). A iniciativa busca quebrar tabus e promover o diálogo aberto sobre saúde mental, oferecendo informação qualificada e apoio emocional para pessoas em situação de vulnerabilidade.</p>
@@ -48,7 +50,7 @@
                     </div>
                 </div>
             </section>
-            <section id="#frases">
+            <section id="frases">
                 <div class="tituloFrases">
                     <h2>Frases que Inspiram</h2>
                 </div>
@@ -62,7 +64,7 @@
                 </div>
                 <div class="card">
                     <h2>pedir ajuda</h2>
-                    <p>texto</p>
+                    <p>texto....</p>
                 </div>
             </section>
 
@@ -72,35 +74,63 @@
 
                 
             </section>
-            <section>
+            <section id="listas">
             <div class="Listas e Aprendizados">
-                <img src="">
+                <img src="imagemDasListas">
                
             </div>
 
           
             </section>
 
-              <section>
-                  <div class="Formulário">
+              <section id="querconversar">
+                  <div class="formulario">
 
-                    <form action="/em branco" method="Post">
-                        <label> Nome: </label>
-                        <input type="text"><br>
-                        <label> Senha:</label>
-                        <input type="password"><br>
-                        <label> Mensagem: </label>
-                        <textarea> </textarea><br>
-                        <button type="Submit">Enviar</button>
+                    <form action="">
+                        <fieldset>
+                            <legend>Fórmulário de Apoio</legend>
+                            <br>
+                            <div class="inputbox">
+                                <label for="nome">Nome completo</label>
+                                <input type="text" name="nome" id="nome" class="inputUser" required>
+                            </div>
+                            <br><br>
+                             <div class="inputbox">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="inputUser" required>
+                            </div>
+                            <br><br>
+                             <div class="inputbox">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                            </div>
+                            <br><br>
+                             <div class="inputbox">
+                                <label for="idade">Idade</label>
+                                <input type="number" name="idade" id="idade" class="inputUser" min="0" max="120">
+                            </div>
+                            <br><br>
+                            <input type="submit" name="submit" id="submit">
+                        </fieldset>
                     </form>
                 
             </div>
 
               </section>
+              <section id="ajuda">
+                    <div class="ajudaTextos">
+                        <h2>Recursos de Apoio Imediato no Brasil</h2>
+                        <ul>
+                            <li><strong>CVV</strong>(<strong>Centro de Valorização da Vida</strong>):Ligue <mark>188</mark>(atendimento 24h, gratuito e sigiloso).</li>
+                            <li><strong>SAMU</strong>(<strong>Serviço de Atendimento Móvel de Urgência</strong>):Ligue <mark>192</mark> para emergências médicas.</li>
+                            <li><strong>Policia Militar</strong>:Ligue <mark>190</mark> em situações de risco imediato ou violência.</li>
+                        </ul>
+                    </div>
+              </section>
             <footer>
                 <p>&copy; 2025 - Setembro Amarelo</p>
             </footer>
-        </header>
+    
 
         
     </body>
