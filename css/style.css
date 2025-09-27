@@ -1,0 +1,74 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:minhafonte ;
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+header {
+    text-align: center;
+    background: #eac800;
+    padding: 20px 0;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+}
+
+.headerIcon-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.headerIcon-texto h1 {
+    color: #254e06;
+}
+
+.headerIcon-texto img {
+    height: 55px; ;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #254e06;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+section {
+    height: 90vh;          
+  padding: 40px;
+  scroll-margin-top: 80px;
+}
+
+body {
+    background: #f5eab9;
+}
+
+.formulario {
+    position: absolute;
+   
+ 
+  
+    
+}
+
+
+
+mark {
+    background: #e9de4b;
+}
