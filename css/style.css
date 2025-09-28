@@ -278,16 +278,53 @@ body {
     background: #f5eab9;
 }
 
+
+mark {
+    background: #eac800;
+}
+
+#querconversar{
+    display: flex;              /* Ativa o Flexbox */
+  justify-content: center;    /* Centraliza horizontalmente */
+  align-items: center;        /* Centraliza verticalmente */
+  height: 100vh;       
+}
+
 .formulario {
-    position: absolute;
-   
- 
-  
-    
+  max-width: 700px;
+  width: 100%;
+  padding: 25px 30px;
+  background: #fff8c9;
+  border-radius: 10px;
+}
+
+.formulario legend {
+  font-size: 25px;
+  font-weight: 500;
+
 }
 
 
+#ajuda {
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  height: 100vh;         
+}
 
-mark {
-    background: #e9de4b;
+.ajudaTextos {
+       margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: justify;
+}
+
+fieldset{
+  border: none;
+}
+
+footer {
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
 }
