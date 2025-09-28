@@ -1,12 +1,12 @@
 🌐 Exercício – Programador de Sistemas (Senac)
 
-Projeto desenvolvido como parte da disciplina de Programador de Sistemas no Senac, utilizando apenas HTML5 e CSS3.
+###Projeto desenvolvido como parte da disciplina de Programador de Sistemas no Senac, utilizando apenas HTML5 e CSS3.
 
 📌 Objetivo
 
 Criar uma página web estática que pratique conceitos fundamentais de estruturação e estilização, aplicando boas práticas de semântica e organização de código.
 
-🎯 Conteúdos Trabalhados
+🎯 ##Conteúdos Trabalhados
 
 Estrutura básica do HTML5 (head, body, header, footer, section, nav).
 
@@ -18,17 +18,6 @@ Aplicação de layout com grid/flexbox.
 
 Boas práticas de indentação e separação entre conteúdo e estilo.
 
-🖥️ Tecnologias Utilizadas
+🖥️ ##Tecnologias Utilizadas
 
-HTML5
 
-CSS3
-
-📂 Estrutura
-📁 projeto-senac
- ┣ 📁 css
- ┃ ┗ style.css
- ┣ 📁 images
- ┃ ┗ (imagens utilizadas no site)
- ┣ index.html
- ┗ README.md
