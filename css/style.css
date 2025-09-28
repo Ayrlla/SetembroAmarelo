@@ -252,8 +252,6 @@ position: relative;
 }
 
 
-
-
 section {
           
   padding: 40px;
@@ -284,39 +282,196 @@ mark {
 }
 
 #querconversar{
-    display: flex;              /* Ativa o Flexbox */
-  justify-content: center;    /* Centraliza horizontalmente */
-  align-items: center;        /* Centraliza verticalmente */
-  height: 100vh;       
-}
-
-.formulario {
-  max-width: 700px;
-  width: 100%;
-  padding: 25px 30px;
-  background: #fff8c9;
-  border-radius: 10px;
-}
-
-.formulario legend {
-  font-size: 25px;
-  font-weight: 500;
-
-}
-
-
-#ajuda {
   display: flex;              
   justify-content: center;    
   align-items: center;        
-  height: 100vh;         
+  height: 90vh;
+  padding:32px 20px;  
 }
 
-.ajudaTextos {
-       margin-bottom: 15px;
-    font-size: 1.5rem;
-    color: #333;
-    text-align: justify;
+.formulario{
+  max-width: 700px;
+  width: 100%;
+  background:#fff8c9;
+  border-radius:16px;
+  box-shadow:0 12px 28px rgba(0,0,0,.10);
+  padding:32px 36px;
+}
+
+.formulario legend {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #254e06; 
+}
+
+fieldset{ border:none; padding:0; }
+
+
+.inputbox {
+   display:flex;
+  flex-direction:column;    
+  gap:8px;
+  margin-bottom:18px;
+}
+
+.inputbox label {
+   font-size:16px;
+  color:#333;
+  font-weight:600;
+}
+
+.inputbox input {
+  width:100%;               
+  padding:12px 14px;
+  border:1px solid #e2d992;
+  border-radius:10px;
+  background:#fffdf0;
+  font-size:16px;
+}
+
+.inputbox input:focus{
+  outline:2px solid #eac800;
+  border-color:#eac800;
+  box-shadow:0 0 0 3px rgba(234,200,0,.25);
+}
+
+.escala p{ 
+  margin:12px 0 8px; 
+  font-weight:700; 
+  color:#254e06;
+}
+.escala{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.escala .radios{
+  display:grid;
+  grid-template-columns: repeat(11, minmax(28px,1fr));
+  gap:10px;
+  align-items:center;
+  justify-items:center;
+}
+.escala .radios label{
+  font-size:14px;
+  color:#555;
+}
+
+#submit{
+  margin-top:12px;
+  align-self:flex-end;      
+  background:#eac800;
+  color:#254e06;
+  border:none;
+  padding:12px 22px;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:800;
+  cursor:pointer;
+  transition:transform .15s ease, box-shadow .15s ease, background .15s;
+}
+#submit:hover{              
+  background:#d4b300;
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+
+@media (max-width: 540px){
+  .formulario{ padding:24px; border-radius:12px; }
+  .formulario legend{ font-size:24px; }
+}
+
+.radio-group {
+  margin: 15px 0;
+}
+
+#submit {
+  background: #eac800;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #254e06;
+  transition: 0.2s;
+}
+
+#submit: hover {
+  background: #d4b300; 
+
+}
+
+.ajuda {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  background: transparent;   
+  box-shadow: none;          
+}
+.ajuda__container {
+  text-align: center;
+}
+
+.ajuda h2 {
+  font-size: clamp(24px, 3vw, 32px);
+  color: #254e06;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.ajuda__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 20px;
+}
+
+.ajuda__lista li {
+  background: #fdf4b9;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  font-size: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,.05);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.ajuda__lista li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+}
+
+.ajuda__lista .icone {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.numero {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: #eac800;
+  color: #254e06;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background .2s ease;
+}
+
+.numero:hover {
+  background: #d4b300;
+  color: #fff;
+}
+
+.ajuda__alerta {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #a30000;
 }
 
 fieldset{
